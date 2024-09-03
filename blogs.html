@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="jpeg" href="images/f.jpeg">
+    <title>Blogs</title>
+    <link rel="stylesheet" href="css/a.css">
+
+
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+        #gameCanvas {
+            background-color: #f3fafc;
+            display: block;
+            margin: 20px auto;
+            border: 1px solid #333;
+        }
+        #score {
+            font-size: 1.5rem;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <body>
+        <nav class="navbar">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <label class="logo">Shree</label>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="academicQualification.html">Academic Qualifications</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="achievements.html">Achievements</a></li>
+                <li><a href="childClass.html">Child Class</a></li>
+            </ul>
+        </nav>
+        <pre>      <span style="color: purple; font-size: larger; margin-top: 10px;"> Thi is a blogs tag </span> <br>
+                <hr>    <hr>
+        blogs is loading..
+           plz wait..............
+           until then lets play game..
+                                                                                                                            
+            
+            
+        </pre>
+    <canvas id="gameCanvas" width="400" height="400"></canvas>
+    <div id="score">Score: 0</div>
+
+    <script>
+        const canvas = document.getElementById('gameCanvas');
+        const ctx = canvas.getContext('2d');
+
+        const gridSize = 20;
+        const tileCount = canvas.width / gridSize;
+        let snake = [{x: 10, y: 10}];
+        let food = {x: 15, y: 15};
+        let dx = 0;
+        let dy = 0;
+        let score = 0;
+
+        function drawGame() {
+            updateSnakePosition();
+            if (checkCollision()) {
+                resetGame();
+            }
+            clearCanvas();
+            drawSnake();
+            drawFood();
+            updateScore();
+            if (checkFoodCollision()) {
+                score++;
+                growSnake();
+                moveFood();
+            }
+        }
+
+        function clearCanvas() {
+            ctx.fillStyle = 'black';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+        }
+
+        function drawSnake() {
+            ctx.fillStyle = 'lime';
+            snake.forEach(part => ctx.fillRect(part.x * gridSize, part.y * gridSize, gridSize, gridSize));
+        }
+
+        function drawFood() {
+            ctx.fillStyle = 'red';
+            ctx.fillRect(food.x * gridSize, food.y * gridSize, gridSize, gridSize);
+        }
+
+        function updateSnakePosition() {
+            const head = {x: snake[0].x + dx, y: snake[0].y + dy};
+            snake.unshift(head);
+            snake.pop();
+        }
+
+        function checkCollision() {
+            const head = snake[0];
+            for (let i = 1; i < snake.length; i++) {
+                if (head.x === snake[i].x && head.y === snake[i].y) {
+                    return true;
+                }
+            }
+            if (head.x < 0 || head.x >= tileCount || head.y < 0 || head.y >= tileCount) {
+                return true;
+            }
+            return false;
+        }
+
+        function checkFoodCollision() {
+            return snake[0].x === food.x && snake[0].y === food.y;
+        }
+
+        function growSnake() {
+            snake.push({...snake[snake.length - 1]});
+        }
+
+        function moveFood() {
+            food.x = Math.floor(Math.random() * tileCount);
+            food.y = Math.floor(Math.random() * tileCount);
+        }
+
+        function updateScore() {
+            document.getElementById('score').textContent = `Score: ${score}`;
+        }
+
+        function resetGame() {
+            snake = [{x: 10, y: 10}];
+            dx = 0;
+            dy = 0;
+            score = 0;
+            moveFood();
+        }
+
+        document.addEventListener('keydown', event => {
+            switch(event.key) {
+                case 'ArrowUp':
+                    if (dy === 0) {
+                        dx = 0;
+                        dy = -1;
+                    }
+                    break;
+                case 'ArrowDown':
+                    if (dy === 0) {
+                        dx = 0;
+                        dy = 1;
+                    }
+                    break;
+                case 'ArrowLeft':
+                    if (dx === 0) {
+                        dx = -1;
+                        dy = 0;
+                    }
+                    break;
+                case 'ArrowRight':
+                    if (dx === 0) {
+                        dx = 1;
+                        dy = 0;
+                    }
+                    break;
+            }
+        });
+
+        setInterval(drawGame, 100);
+    </script>
+
+
+
+
+
+
+
+    <footer>
+        <p>&copy; 2024 All rights reserved</p>
+    </footer>
+          
+</body>
+</html>
