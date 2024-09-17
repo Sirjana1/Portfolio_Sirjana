@@ -413,7 +413,7 @@ For screens between 1281px and 1526px
     align-items: center; /* Align the icons vertically */
     height: auto;
     width: 100%;
-    background-color: rgb(63, 24, 235);
+    background-color: white(63, 24, 235);
     text-align: center;
     margin-top: 60px; 
     }
@@ -506,7 +506,8 @@ For screens between 1281px and 1526px
     opacity: 1;
 }
 .shree img{
-    max-width: 80px;
+    max-width: 100%;
+    height: auto;
 }
 
 .shree {
@@ -514,15 +515,15 @@ For screens between 1281px and 1526px
 }
 
 .title img {
-    max-width: 80px; /* Reduce the logo size for smaller screens */
+    max-width: 100px; /* Reduce the logo size for smaller screens */
 }
 
 .title h1 {
-    font-size: 0.5rem; /* Smaller font size for headings */
+    font-size: 1.5rem; /* Smaller font size for headings */
 }
 
 .title h2 {
-    font-size: 0.5rem; /* Adjusted font size for subheadings */
+    font-size: 1.2rem; /* Adjusted font size for subheadings */
 }
 
 }
