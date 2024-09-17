@@ -263,15 +263,35 @@ section img{
 
 .shree{
     text-align: center;
+    margin-bottom: 5px;
    
+}
+.shree img{
+    max-width: 100%;
+    height: auto;
 }
 
 
 .title{
-    margin-top: 10px;
+    margin-top: 7px;
     text-align: center;
     color:black;
     text-shadow: 4px 4px 5px rgb(125, 117, 241), -4px -4px 4px rgb(243, 104, 243);
+}
+
+.title img{
+    max-width: 150px;
+    height: auto;
+}
+
+.title h1{
+    font-size: 2rem;
+    margin: 10px 0;
+}
+
+.title h2{
+    font-size:1.5rem;
+    color:none;
 }
 
 
@@ -395,17 +415,18 @@ For screens between 1281px and 1526px
     width: 100%;
     background-color: white;
     text-align: center;
-    margin-top: 60px;
-}
+    margin-top: 60px; 
+    margin-bottom: 1px;
+    }
 
-.icons a {
+  .icons a {
    
-   margin: 10px 20px;
+     margin: 10px 20px;
 
-.fa-brands.fa-facebook {
+  .fa-brands.fa-facebook {
     color: rgb(64, 66, 182);
     font-size: 25px;
-}
+   }
 
 .fa-brands:active.fa-facebook {
     color: rgb(118, 240, 148);
@@ -484,5 +505,31 @@ For screens between 1281px and 1526px
     visibility: visible;
     opacity: 1;
 }
+.shree img{
+    max-width: 50px;
+    height: 10%;
+}
+
+.shree {
+    margin-top: 1px;
+    margin-bottom: 5px;
+    height: 20px;
+    width: 30px; /* Adjusted for better spacing on smaller screens */
+}
+
+.title img {
+    max-width: 50px; /* Reduce the logo size for smaller screens */
+    height: 10%;
+}
+
+.title h1 {
+    font-size: 0.1rem; /* Smaller font size for headings */
+}
+
+.title h2 {
+    font-size: 0.1rem; /* Adjusted font size for subheadings */
+}
+
+
 
 }
