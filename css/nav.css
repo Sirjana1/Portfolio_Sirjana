@@ -413,7 +413,7 @@ For screens between 1281px and 1526px
     align-items: center; /* Align the icons vertically */
     height: auto;
     width: 100%;
-    background-color: white(63, 24, 235);
+    background-color: white;
     text-align: center;
     margin-top: 60px; 
     }
