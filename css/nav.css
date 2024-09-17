@@ -413,7 +413,7 @@ For screens between 1281px and 1526px
     align-items: center; /* Align the icons vertically */
     height: auto;
     width: 100%;
-    background-color: white;
+    background-color: rgb(63, 24, 235);
     text-align: center;
     margin-top: 60px; 
     }
@@ -524,7 +524,5 @@ For screens between 1281px and 1526px
 .title h2 {
     font-size: 0.5rem; /* Adjusted font size for subheadings */
 }
-
-
 
 }
