@@ -416,12 +416,12 @@ For screens between 1281px and 1526px
     background-color: white;
     text-align: center;
     margin-top: 60px; 
-    margin-bottom: 1px;
     }
 
   .icons a {
    
      margin: 10px 20px;
+  }
 
   .fa-brands.fa-facebook {
     color: rgb(64, 66, 182);
@@ -506,28 +506,23 @@ For screens between 1281px and 1526px
     opacity: 1;
 }
 .shree img{
-    max-width: 50px;
-    height: 10%;
+    max-width: 80px;
 }
 
 .shree {
-    margin-top: 1px;
-    margin-bottom: 5px;
-    height: 20px;
-    width: 30px; /* Adjusted for better spacing on smaller screens */
+    margin-bottom: 10px; /* Adjusted for better spacing on smaller screens */
 }
 
 .title img {
-    max-width: 50px; /* Reduce the logo size for smaller screens */
-    height: 10%;
+    max-width: 80px; /* Reduce the logo size for smaller screens */
 }
 
 .title h1 {
-    font-size: 0.1rem; /* Smaller font size for headings */
+    font-size: 0.5rem; /* Smaller font size for headings */
 }
 
 .title h2 {
-    font-size: 0.1rem; /* Adjusted font size for subheadings */
+    font-size: 0.5rem; /* Adjusted font size for subheadings */
 }
 
 
