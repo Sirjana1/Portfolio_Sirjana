@@ -350,10 +350,10 @@ For screens between 1281px and 1526px
     #check:checked ~ul{
         left:0;
     }
-}
+    
 
 /* For screens up to 640px */
-@media (max-width: 640px) {
+@media (min-width:425) and (max-width: 640px) {
     body {
         background-color: none;
     }
