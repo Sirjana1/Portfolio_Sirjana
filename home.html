@@ -12,6 +12,19 @@
     
 </head>
 
+{% comment %} </style>
+.logo1-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Space between logos */
+}
+
+.logo1 {
+    width: 50px;  /* Adjust the size of your logos */
+    height: auto;
+}
+</style> {% endcomment %}
+
 <body>
     
   
@@ -43,7 +56,12 @@
     <div class="content">
         <img src="images/shree.png"  alt="Image" class="full-screen-image">
     </div>
-    
+    <div class="logo1-container">
+        <img src="qr/sqr.png" alt="Logo 1" class="logo1">
+        <img src="qr/sfb.png" alt="Logo 2" class="logo1">
+        <img src="qr/syt.png" alt="Logo 3" class="logo1">
+        <img src="qr/sgh.png" alt="Logo 4" class="logo1">
+    </div> 
     <footer>
         <p>&copy; 2024 All rights reserved</p>
     </footer>

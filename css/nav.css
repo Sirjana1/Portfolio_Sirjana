@@ -15,7 +15,9 @@ background-color: none;
 
 }
 
-/* nav.navbar{
+
+
+ nav.navbar{
     position: fixed;
     background-color: rgb(24, 127, 224);
     height: 50px;
@@ -39,7 +41,6 @@ background-color: none;
     text-shadow: 4px 4px 7px rgb(252, 12, 252), -4px -4px 7px hsl(240, 87%, 59%);
 
 }
-
 nav ul{
     float: right;
     margin-right: 20px;
@@ -58,6 +59,7 @@ nav ul li a {
     padding: 7px, 13px;
     border-radius:  4px;
 } 
+
 
 a.active, a:hover{
     background: lightskyblue;
@@ -336,6 +338,34 @@ For screens between 1281px and 1526px
     #check:checked ~ul{
         left:0;
     }
+   
+  
+    nav.navbar {
+        height: 60px; /* Adjust height for larger screens */
+        padding: 0 10px; /* Adjust padding for better spacing */
+    }
+
+    .logo {
+        font-size: 35px; /* Adjust font size for logos */
+        padding: 0 50px; /* Adjust padding for logos */
+    }
+
+    nav ul li {
+        margin: 0 20px; /* Adjust spacing between list items */
+    }
+
+    nav ul li a {
+        font-size: 16px; /* Adjust font size for links */
+        padding: 5px 10px; /* Adjust padding for links */
+    }
+
+
+
+
+
+
+    
+    
 }
 
 /* For screens between 641px and 768px */
