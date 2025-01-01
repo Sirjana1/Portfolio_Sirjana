@@ -341,8 +341,12 @@ For screens between 1281px and 1526px
    
   
     nav.navbar {
-        height:30px; /* Adjust height for larger screens */
+        height:50px; /* Adjust height for larger screens */
         padding: 0 ; /* Adjust padding for better spacing */
+        position: fixed;
+        background-color: rgb(24, 127, 224);
+        margin: 0;
+        padding: 0;
     }
 
     .logo {
@@ -351,13 +355,17 @@ For screens between 1281px and 1526px
     }
 
     nav ul li {
-        margin: 0 20px; /* Adjust spacing between list items */
+        margin: 0 20px;
+        display: inline-block;
+        line-height:50px; /* Adjust spacing between list items */
     }
 
     nav ul li a {
         font-size: 16px; /* Adjust font size for links */
+        text-transform: uppercase;
         padding: 5px 10px; /* Adjust padding for links */
-        color: blue
+        border-radius:3px;
+        color:pink;
     }
 
 
