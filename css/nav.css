@@ -341,8 +341,8 @@ For screens between 1281px and 1526px
    
   
     nav.navbar {
-        height: 60px; /* Adjust height for larger screens */
-        padding: 0 10px; /* Adjust padding for better spacing */
+        height:30px; /* Adjust height for larger screens */
+        padding: 0 ; /* Adjust padding for better spacing */
     }
 
     .logo {
@@ -357,6 +357,7 @@ For screens between 1281px and 1526px
     nav ul li a {
         font-size: 16px; /* Adjust font size for links */
         padding: 5px 10px; /* Adjust padding for links */
+        color: blue
     }
 
 
