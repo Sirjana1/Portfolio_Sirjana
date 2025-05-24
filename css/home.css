@@ -8,17 +8,17 @@
 }
 
 
-body{
+.body{
    
 font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 background-color: none;
+margin-top: 50px;
 
 }
 
-
  nav.navbar{
     position: fixed;
-    background-color: rgb(24, 127, 224);
+background-color: rgba(0, 0, 255, 0.5);  /* semi-transparent blue */
     height: 50px;
     width: 100%;
     margin: 0;
@@ -40,6 +40,7 @@ background-color: none;
     text-shadow: 4px 4px 7px rgb(252, 12, 252), -4px -4px 7px hsl(240, 87%, 59%);
 
 }
+
 nav ul{
     float: right;
     margin-right: 20px;
@@ -58,7 +59,6 @@ nav ul li a {
     padding: 7px, 13px;
     border-radius:  4px;
 } 
-
 
 a.active, a:hover{
     background: lightskyblue;
@@ -190,7 +190,7 @@ a.active, a:hover{
 
 
 
-/* .bg-img{
+ /* .bg-img{
     background-image: url('/home/sirjana/Videos/Documents/Portfolio/images/Screenshot_from_2024-07-12_17-19-50-removebg-preview.png');
     height: 20vh;
     width: 50%;
@@ -198,8 +198,10 @@ a.active, a:hover{
     background-position: center;
     background-repeat: no-repeat;
     border: 2px red;
-}  */
-
+}   */
+.content{
+    margin-top: 50px;
+}
 
 footer{
     width: 100%;
@@ -329,8 +331,7 @@ For screens between 1281px and 1526px
 /* For screens between 769px and 1024px */
 @media (min-width: 769px) and (max-width: 1024px) {
     body {
-        background-color:white;
-        position: relative;
+        background-color: green;
     }
     .checkbtn{
         display: block;
@@ -338,56 +339,6 @@ For screens between 1281px and 1526px
     #check:checked ~ul{
         left:0;
     }
-   
-  
-    nav.navbar {
-        height:50px; /* Adjust height for larger screens */
-        padding: 0 ; /* Adjust padding for better spacing */
-        position: fixed;
-        background-color: rgb(24, 127, 224);
-        margin: 0;
-        padding: 0;
-    }
-
-    .logo {
-        font-size: 35px; /* Adjust font size for logos */
-        padding: 0 50px; /* Adjust padding for logos */
-    
-
-    }
-    nav ul{
-        float: right;
-        margin-right: 20px;
-    }
-
-    nav ul li {
-        margin: 0 20px;
-        display: inline-block;
-        line-height:50px; /* Adjust spacing between list items */
-    }
-
-    nav ul li a {
-        font-size: 9px; /* Adjust font size for links */
-        text-transform: uppercase;
-        padding: 5px 10px; /* Adjust padding for links */
-        border-radius:3px;
-        color:lavender;
-        
-    }
-
-    .icons{
-        height: 6vh;
-        width:100%;
-        background-color: white;
-        text-align: center;
-        margin-top:60px
-    }
-
-
-
-
-    
-    
 }
 
 /* For screens between 641px and 768px */
