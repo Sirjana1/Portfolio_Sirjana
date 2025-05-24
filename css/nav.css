@@ -15,6 +15,7 @@ background-color: none;
 
 }
 
+
  nav.navbar{
     position: fixed;
     background-color: rgb(24, 127, 224);
@@ -39,7 +40,6 @@ background-color: none;
     text-shadow: 4px 4px 7px rgb(252, 12, 252), -4px -4px 7px hsl(240, 87%, 59%);
 
 }
-
 nav ul{
     float: right;
     margin-right: 20px;
@@ -58,6 +58,7 @@ nav ul li a {
     padding: 7px, 13px;
     border-radius:  4px;
 } 
+
 
 a.active, a:hover{
     background: lightskyblue;
@@ -328,7 +329,8 @@ For screens between 1281px and 1526px
 /* For screens between 769px and 1024px */
 @media (min-width: 769px) and (max-width: 1024px) {
     body {
-        background-color: green;
+        background-color:white;
+        position: relative;
     }
     .checkbtn{
         display: block;
@@ -336,6 +338,56 @@ For screens between 1281px and 1526px
     #check:checked ~ul{
         left:0;
     }
+   
+  
+    nav.navbar {
+        height:50px; /* Adjust height for larger screens */
+        padding: 0 ; /* Adjust padding for better spacing */
+        position: fixed;
+        background-color: rgb(24, 127, 224);
+        margin: 0;
+        padding: 0;
+    }
+
+    .logo {
+        font-size: 35px; /* Adjust font size for logos */
+        padding: 0 50px; /* Adjust padding for logos */
+    
+
+    }
+    nav ul{
+        float: right;
+        margin-right: 20px;
+    }
+
+    nav ul li {
+        margin: 0 20px;
+        display: inline-block;
+        line-height:50px; /* Adjust spacing between list items */
+    }
+
+    nav ul li a {
+        font-size: 9px; /* Adjust font size for links */
+        text-transform: uppercase;
+        padding: 5px 10px; /* Adjust padding for links */
+        border-radius:3px;
+        color:lavender;
+        
+    }
+
+    .icons{
+        height: 6vh;
+        width:100%;
+        background-color: white;
+        text-align: center;
+        margin-top:60px
+    }
+
+
+
+
+    
+    
 }
 
 /* For screens between 641px and 768px */
