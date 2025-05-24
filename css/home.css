@@ -8,16 +8,17 @@
 }
 
 
-body{
+.body{
    
 font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 background-color: none;
+margin-top: 50px;
 
 }
 
  nav.navbar{
     position: fixed;
-    background-color: rgb(24, 127, 224);
+background-color: rgba(0, 0, 255, 0.5);  /* semi-transparent blue */
     height: 50px;
     width: 100%;
     margin: 0;
@@ -189,7 +190,7 @@ a.active, a:hover{
 
 
 
-/* .bg-img{
+ /* .bg-img{
     background-image: url('/home/sirjana/Videos/Documents/Portfolio/images/Screenshot_from_2024-07-12_17-19-50-removebg-preview.png');
     height: 20vh;
     width: 50%;
@@ -197,8 +198,10 @@ a.active, a:hover{
     background-position: center;
     background-repeat: no-repeat;
     border: 2px red;
-}  */
-
+}   */
+.content{
+    margin-top: 50px;
+}
 
 footer{
     width: 100%;
