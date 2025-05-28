@@ -407,7 +407,7 @@ For screens between 1281px and 1526px
 /* For screens up to 640px */
 @media (min-width:425) and (max-width: 640px) {
     body {
-        background-color: none;
+        background-color: purple;
     }
     #check:checked ~ul{
         left:0;
