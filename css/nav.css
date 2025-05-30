@@ -585,3 +585,12 @@ For screens between 1281px and 1526px
         background-color: orange;
     }
 }
+
+
+@media (max-width: 375px) {
+  /* Styles for Samsung A10s and similar small phones */
+  body {
+    background-color:red;
+  }
+  /* other responsive styles */
+}
