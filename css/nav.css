@@ -578,13 +578,14 @@ For screens between 1281px and 1526px
     font-size: 1.2rem; /* Adjusted font size for subheadings */
 }
 
-}
 
-@media(min-width:385px ) and (max-width:424px){
+}
+@media (min-width: 385px) and (max-width: 424px) {
     body {
         background-color: orange;
+        }
+
     }
-}
 
 
 @media (max-width: 375px) {
