@@ -391,7 +391,7 @@ For screens between 1281px and 1526px
 }
 
 /* For screens between 641px and 768px */
-@media (min-width: 641px) and (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1025px) {
     body {
         background-color: blue;
     }
@@ -578,4 +578,10 @@ For screens between 1281px and 1526px
     font-size: 1.2rem; /* Adjusted font size for subheadings */
 }
 
+}
+
+@media(min-width:385px ) and (max-width:424px){
+    body {
+        background-color: orange;
+    }
 }
