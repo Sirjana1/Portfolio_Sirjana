@@ -30,26 +30,12 @@
             color: #007bff;
         }
 
-         .navbar{
-            height:50px;
-        }
+         
+        
         footer{
             height: 50px;
         }
-        .navbar-nav {
-            display: flex;
-            align-items: center; /* Ensures vertical alignment */
-        }
-        .navbar-brand img {
-            display: block;
-            margin: auto;
-        }
-        .navbar {
-            display: flex;
-            align-items: center; /* Vertically centers content */
-            justify-content: space-between; /* Ensures space distribution */
-            height: 60px; /* Adjust this based on your navbar size */
-        }
+      
 
 
 
