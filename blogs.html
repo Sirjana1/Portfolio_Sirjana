@@ -23,6 +23,18 @@
 .card-body {
     padding: 15px;
 }
+svg {
+    display: block;
+    margin: auto;
+}
+
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+}
+
 
     </style>
 <body>
@@ -89,7 +101,21 @@
     </div>
 </div>
 -->
+<div>
     
+</div>
+
+
+
+<div class="center-container">
+    <svg width="200" height="200">
+      <circle cx="100" cy="100" r="50" stroke="black" stroke-width="3" fill="red">
+        <animate attributeName="r" from="50" to="200" dur="20s" repeatCount="indefinite"/>
+        <animate attributeName="fill" values="red;blue;green;yellow;purple" dur="5s" repeatCount="indefinite"/>
+      </circle>
+    </svg>
+</div>
+
     <footer class="bg-primary text-white text-center p-3 mt-4">
         <p>&copy; 2025 My Website | All Rights Reserved</p>
     </footer>
