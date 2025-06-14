@@ -2,61 +2,164 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0 , maximum-scale =1.0 user-scalable=no">
-    <title>projects</title>
-    <link rel= "stylesheet" href="/css/nav.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <head>
+    <link rel="stylesheet" href="css/nav.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/ce0413941b.js" crossorigin="anonymous"></script>
+    <style>
+    .card {
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+.card-img-top {
+    height: 100px;
+    object-fit: cover;
+}
+.card-body {
+    padding: 15px;
+}
+.small-card {
+    width: 250px;
+    height: 300px;
+}
+
+
+  .carousel {
+    width: 50%; /* Adjust width as needed */
+    margin: auto; /* Centers the carousel */
+  }
+  .carousel-inner img {
+    width: 100%; /* Ensures images fit within carousel */
+  }
+</style>
+
+
 </head>
 <body>
+<!--Navbar-->
+<nav class="navbar navbar-expand-lg bg-secondary navbar-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="images/a1-modified.png" alt="Logo" width="40" height="40"> 
+        </a>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-            <img src="/images/shreelogo.jpg" alt="Logo" width="40" height="40">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link text-black" href="home.html">  Home🏠   </a></li>
+                <!--comment %} <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li> {% endcomment %}-->
+                <li class="nav-item"><a class="nav-link text-black" href="projects.html">Projects🛠️</a>
+                <li class="nav-item"><a class="nav-link text-black" href="notes.html">  Notes📚    </a></li>
+                <li class="nav-item"><a class="nav-link text-black" href="oldQuestions.html">Old Questions📚    </a></li>
+
+                <!-- comment %} <li class="nav-item"><a class="nav-link" href="media.html">Media</a></li> {% endcomment %}-->
+                <!--comment %} <li class="nav-item"><a class="nav-link" href="childClass.html">ChildClass</a></li> {% endcomment %} -->
+                <li class="nav-item"><a class="nav-link text-black" href="blogs.html">   Blogs📝     </a></li>
+                <li class="nav-item"><a class="nav-link text-black" href="academicQualification.html">Academic Qualification🎓</a></li>
+               <!-- {% comment %} <li class="nav-item"><a class="nav-link" href="academicQualification.html">Academic Qualification</a></li> {% endcomment %} -->
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<!--fb -link-->
+<section class="bg-white mt-4  "style="padding-top: 50px;"> 
+    <div>
+        <div class="text-center mt-3">
+            <a href="https://www.facebook.com" target="_blank">
+                <i class="fa-brands fa-facebook fa-2x"></i>
             </a>
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="notes.html">Notes</a></li>
-                    <li class="nav-item"><a class="nav-link" href="media.html">Media</a></li>
-                    <li class="nav-item"><a class="nav-link" href="childClass.html">ChildClass</a></li>
-                    <li class="nav-item"><a class="nav-link" href="blogs.html">Blogs</a></li>
-                    <li class="nav-item"><a class="nav-link" href="achievements.html">Achievements</a></li>
-                    <li class="nav-item"><a class="nav-link" href="academicQualification.html">Academic Qualification</a></li>
+            <a href="https://www.linkedin.com" target="_blank">
+                <i class="fa-brands fa-linkedin fa-2x"></i>
+            </a>
+            <a href="https://www.github.com" target="_blank">
+                <i class="fa-brands fa-github fa-2x"></i>
+            </a>
+            <a href="https://www.youtube.com" target="_blank">
+                <i class="fa-brands fa-youtube fa-2x"></i>
+            </a>
+        </div>
+    </div>
 
 
-                </ul>
+<div class="container mt-5">
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/mp.png" class="d-block" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="images/webii.png" class="d-block" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="images/web.png" class="d-block" alt="...">
             </div>
         </div>
-    </nav>
-
-    <div class="text-center mt-3">
-    <a href="https://www.facebook.com" target="_blank">
-        <i class="fa-brands fa-facebook fa-2x"></i>
-    </a>
-    <a href="https://www.linkedin.com" target="_blank">
-        <i class="fa-brands fa-linkedin fa-2x"></i>
-    </a>
-    <a href="https://www.github.com" target="_blank">
-        <i class="fa-brands fa-github fa-2x"></i>
-    </a>
-    <a href="https://www.youtube.com" target="_blank">
-        <i class="fa-brands fa-youtube fa-2x"></i>
-    </a>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
 </div>
 
-  
- <footer class="bg-primary text-white text-center p-3 mt-4">
-        <p>&copy; 2025 My Website | All Rights Reserved</p>
- </footer>
+<section class="d-flex justify-content-center align-items-center mt-5 ">
+    <div class="card small-card text-center p-3 bg-secondary">
+        <ul class="list-unstyled">
+            <img src="images/cover.png" class="card-img-top" alt="Subject Image">
+            <li>Hand Written Text Detection System</li>
+           <button class = "btn btn-outline-dark mt-3"><li><a href="https://github.com/Sirjana1/AI_System.git"></a>Visit source code</li></button> 
+            <!-- <li><a href=""></a>Ram</li>
+            <li><a href="a"></a>Ram</li> -->
+        </ul>
+    </div>
+     <div class="card small-card text-center p-3 bg-secondary">
+        <ul class="list-unstyled">    
+        <img src="images/cover.png" class="card-img-top" alt="Subject Image">
+        <li>BigIN</li>
+           <button class = "btn btn-outline-dark mt-3"><li><a href="https://github.com/Sirjana1/BigIN.git"></a>Visit source code</li></button> 
+            <!-- <li><a href=""></a>Ram</li>
+            <li><a href="a"></a>Ram</li> -->
+        </ul>
+    </div>
+     <div class="card small-card text-center p-3 bg-secondary">
+        <ul class="list-unstyled">
+            <img src="images/cover.png" class="card-img-top" alt="Subject Image">
+             <li>IdeaSanjal</li>
+                <button class = "btn btn-outline-dark mt-3"><li><a href="https://github.com/Sirjana1/IdeaaSanjal.git"></a>Visit source code</li></button> 
 
+            <!-- <li><a href=""></a>Ram</li>
+            <li><a href="a"></a>Ram</li> -->
+        </ul>
+    </div>
+</section>
+
+
+
+<!--footer-->
+<section>
+ <footer class="bg-white text-black text-center p-3 mt-4">
+        <p>&copy; 2024 ershree | All Rights Reserved</p>
+</footer>
+</section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
+
+
+

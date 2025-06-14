@@ -3,19 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="jpeg" href="images/f.jpeg">
-    <title>Portfolio with Navbar and Centered Images</title>
-    <link rel = "stylesheet" href = "/css/nav.css">
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Index</title>
+    <link rel = "stylesheet" href ="css/nav.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/ce0413941b.js" crossorigin="anonymous"></script>
+    <style>
+       
+        video {
+            max-width: 10%;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+        }
+    </style>
+    </style>
+
 </head>
 <body>
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+<!--Navbar-->
+<!--===============================================================================-->
+    <nav class="navbar navbar-expand-lg bg-secondary navbar-dark bg-none fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">
-            <img src="/images/shreelogo.jpg" alt="Logo" width="40" height="40"> 
+            <img src="images/a1-modified.png" alt="Logo" width="40" height="40"> 
             </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -23,14 +33,21 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="notes.html">Notes</a></li>
-                    <li class="nav-item"><a class="nav-link" href="media.html">Media</a></li>
-                    <li class="nav-item"><a class="nav-link" href="childClass.html">ChildClass</a></li>
-                    <li class="nav-item"><a class="nav-link" href="blogs.html">Blogs</a></li>
-                    <li class="nav-item"><a class="nav-link" href="achievements.html">Achievements</a></li>
-                    <li class="nav-item"><a class="nav-link" href="academicQualification.html">Academic Qualification</a></li>
+                    
+                    <li class="nav-item"><a class="nav-link text-black" href="home.html">  Home🏠   </a></li>
+                    <!--comment %} <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li> {% endcomment %}-->
+                <li class="nav-item"><a class="nav-link text-black" href="projects.html">Projects🛠️</a>
+                    <li class="nav-item"    ><a class="nav-link  text-black" href="notes.html">  Notes📚    </a></li>
+                   <li class="nav-item"><a class="nav-link text-black" href="oldQuestions.html">Old Questions📚    </a></li>
+
+                    <!-- comment %} <li class="nav-item"><a class="nav-link" href="media.html">Media</a></li> {% endcomment %}-->
+                    <!--comment %} <li class="nav-item"><a class="nav-link" href="childClass.html">ChildClass</a></li> {% endcomment %} -->
+                    <li class="nav-item"><a class="nav-link text-black" href="blogs.html">   Blogs📝     </a></li>
+                    <!--{% comment %} <li class="nav-item"><a class="nav-link" href="achievements.html">Achievements</a></li>-->
+                    <li class="nav-item"><a class="nav-link text-black" href="academicQualification.html">Academic Qualification🎓</a></li>
+                     <!--<li class="nav-item"><a class="nav-link text-black" href="cv.html">   CV📝     </a></li>-->
+                    
+
 
 
                 </ul>
@@ -38,29 +55,91 @@
         </div>
     </nav>
 
-    <div class="text-center mt-3">
-    <a href="https://www.facebook.com" target="_blank">
-        <i class="fa-brands fa-facebook fa-2x"></i>
-    </a>
-    <a href="https://www.linkedin.com" target="_blank">
-        <i class="fa-brands fa-linkedin fa-2x"></i>
-    </a>
-    <a href="https://www.github.com" target="_blank">
-        <i class="fa-brands fa-github fa-2x"></i>
-    </a>
-    <a href="https://www.youtube.com" target="_blank">
-        <i class="fa-brands fa-youtube fa-2x"></i>
-    </a>
+<!--===============================================================================-->
+<section class="bg-white mt-4  "style="padding-top: 50px;"> 
+    <div>
+        <div class="text-center mt-3">
+            <a href="https://www.facebook.com" target="_blank">
+                <i class="fa-brands fa-facebook fa-2x"></i>
+            </a>
+            <a href="https://www.linkedin.com" target="_blank">
+                <i class="fa-brands fa-linkedin fa-2x"></i>
+            </a>
+            <a href="https://www.github.com" target="_blank">
+                <i class="fa-brands fa-github fa-2x"></i>
+            </a>
+            <a href="https://www.youtube.com" target="_blank">
+                <i class="fa-brands fa-youtube fa-2x"></i>
+            </a>
+        </div>
+    </div>
+<div class="container d-flex flex-column align-items-center justify-content-center text-center mt-5">
+    <h1>Bachelor in Computer Engineering</h1>
+    <p>Nepal College of Information Technology.</p>
+
+    <img src="images/ncit.jpg" class="img-fluid rounded shadow-lg" alt="NCIT" style="max-width: 80%;">
+
+    
+</div>
+<div class="container d-flex flex-column align-items-center justify-content-center text-center mt-5">
+    <h1>Diploma in Computer Engineering</h1>
+    <p>Rapti Engineering College.</p>
+
+    <img src="images/rapti.jpg" class="img-fluid rounded shadow-lg" alt="NCIT" style="max-width: 80%;">
+
+    
+</div>
+<div class="container d-flex flex-column align-items-center justify-content-center text-center mt-5">
+    <h1>Secondary level</h1>
+    <p>Batsyayan Secondary School.</p>
+
+    <img src="images/bs.jpg" class="img-fluid rounded shadow-lg" alt="NCIT" style="max-width: 80%;">
+
+    
 </div>
 
-   <footer class="bg-primary text-white text-center p-3 mt-4">
-        <p>&copy; 2025 My Website | All Rights Reserved</p>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-          
-        
+<!--Footer section-->
+<!--===============================================================================-->
+<section>
+  <footer class=" bg-white text-black text-center p-3 mt-4 width">
+        <p>&copy; 2024 ershree | All Rights Reserved</p>
+  </footer>
+</section>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-<!-- {% comment %} https://ncit.edu.np/ {% endcomment   %}
-{% comment %} https://rec.edu.np/ {% endcomment %} -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

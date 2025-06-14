@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+    <!--
+    Navbar
+    -->
+
+    <nav class="navbar navbr-expand-md navbar-light">
+        <div class="container-xxl">
+            <a href="#intro" class = "navbar-brand">
+                <span class="fw-bold text-secondary">
+                  <i class="bi bi-house"></i>  Shree Website
+                </span>
+            </a>
+            <!--
+            toggle button for mobile view-->
+            <button class="navbar-toggler" type = "button" data-bs-toggle="collapse" 
+            data-bs-target = "main-nav" aria-controls = "main-nav" aria-expanded = "false" aria-label = "Toggle navigation">
+            <span class = "navbar-toggler-icon">
+
+            </span>
+            </button>
+
+            <!--
+            navlinks
+            -->
+            <div class="collapse navbar-collapse justify-content-end align-center" id = "main-nav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="" class="nav-link">About Shree</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="" class="nav-link">About Reviews</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="" class="nav-link">About Shree</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="" class="nav-link">About Shree</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="" class="nav-link">About Reviews</a>
+                </li>
+            </ul>
+    
+            </div>
+        </div>
+    </nav>
+  <!--
+  main image and intro text  
+  -->
+
+  <section class="id">
+    <div class="container-lg mt-5">
+        <div class="row jutify-content-enter aligh-items-center">
+            <div class="col-md-5 text-center text-md-start">
+                <h1>
+                    <div class="display-2">Miss Shree</div>
+                    <div class="display-5">A Teacher</div>
+                </h1>
+                <p class="lead my-4 text-muted">This is Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed fugiat, vel pariatur accusamus cum aut ipsam? Voluptatibus enim eum eaque animi,
+                     nihil voluptatum. Autem debitis porro iste ipsum quisquam. Aspernatur!</p>
+                <a href="#pricing" class = "btn btn-primary btn-lg">buy now</a>
+            </div>
+            <div class="col-md-5 text-center d-none d-md-block">
+                <img src="images/ladyhacker.png" alt="" class="img-fluid">
+            </div>
+        </div>
+    </div>
+  </section>
+
+
+  <!--Cards-->
+
+  <section class="bg-light mt-5" id="pricing">
+    <div class="container-lg">
+        <div class="text-center">
+            <h2>This is Shree cards</h2>
+            <p class="lead text-muted">More Details about her</p>
+        </div>
+        <div class="row my-5 align-items-center justify-content-center">
+            <div class="col-8 col-lg-4 col-xl-3">
+                <div class="card">
+                    <div class="card-body text-center py-4">
+                        <h4 class="card-title">First Intro</h4>
+                        <p class="lead card-subtitle">This is 1</p>
+                        <p class="display-5 my-4 text-primary fw-bold">2082/02/3</p>
+                        <p class="card-text mx-5 text-muted d-none d-lg block">jpt lekhne ho yeta</p>
+                        <a href="" class = "btn btn-outline-primary">View her</a>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+    </div>
+  </section>
+
+  <section id="review" class="bg-light">
+    <div class="container-lg">
+        <div class="text-center">
+            <h2>Review</h2>
+            <p class="lead">This is the list practice</p>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="list-group">
+                    <div class="list-group-item py-3">
+                        <h5 class="mb-1">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti esse impedit libero 
+                            labore quis ab accusamus fuga quae aliquam perspiciatis.
+                        </h5>
+                        <p class="mb-1">
+                            Lorem ipsum dolor sit amet.
+                        </p>
+                        <small>review by shree</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+
+
+  <section id = "contact">
+    <div class="container-lg">
+        <div class="text-center">
+            <h3 class="display-3">
+                Get in touch
+            </h3>
+            <h2>Is there any query</h2>
+        </div>
+        <div class="row justify-content-center my-5">
+
+    <div class="col-lg-6">
+    <form>
+        <label for="username" class = "form-label">Username</label>
+        <input type="text" class = "input-control", placeholder="Username" id = "name">
+        
+        <label for="password" class = "form-label">Password</label>
+        <input type="text" class = "input control", placeholder = "Password" id = "password">
+        <button class = "btn btn-primary">Submit</button>
+    </form>
+        </div>
+        </div>
+    </div>
+  </section>
+  <section>
+<div class="container border border-primary" >
+
+  <div class="mb-3 row">
+  <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+  <div class="col-sm-10">
+    <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
+  </div>
+</div>
+<div class="mb-3 row">
+  <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+  <div class="col-sm-10">
+    <input type="password" class="form-control" id="inputPassword">
+  </div>
+</div>
+</div>
+</section>
+<section class="bg-light">
+    <div class="container">
+        <div class="text-center">
+            <h2>Stay in Loop</h2>
+            <p class="lead">Get the latest updates as they happen</p>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-8 text-center">
+                <p class="text-muted my-4">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, at nesciunt. Aperiam cum inventore error velit provident reprehenderit doloribus animi?
+                </p>
+                <button class="btn btn-primary" data-bs-toggle = "modal" data-bs-target = "#reg-modal">
+                    Register for Updates
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+<div class = "modal fade" id ="reg-modal" tabindex = "-1" aria-labelledby = "modal-title" aria-hidden = "true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modal-title">
+                    Get the latest updates
+                </h5>
+                <button class="btn-close" type = "button" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab facere itaque dolor vero perspiciatis natus quod dolores saepe esse animi eveniet veniam, quisquam fuga! Officiis illo pariatur molestias dolorem consequatur.
+
+                </p>
+                <label for="modal-email" class="form-modal">Your email address</label>
+                <input type="email" class = "form-control" id ="modal-email" placeholder = "@abcgmail.com">
+            
+            </div>
+            <button class="btn btn-primary">Submit</button>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+<div class="dropdown mt-3">
+    <button class="btn btn-secondary dropdown-toggle" type="button" 
+    id = "book-dropdown" data-bs-toggle = "dropdown">
+    <li>
+        </a>
+    </li>
+    </button>
+</div>
+
+   
+</body>
+</html>
