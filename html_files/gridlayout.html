@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Container Self Practice</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        section{
+            padding:60px 0;
+        }
+    </style>
+</head>
+<body>
+<!--Page Design
+- navbar
+- main imaage and intro text
+- pricing plans
+- topics at a glance
+- reviews list
+
+-->
+
+<nav class="navbar navbar-expand-md navbar-light">
+    <div class="container-xxl">
+        <a href="" class = navbar-brand>
+            <span>
+                Logo-mention here
+            </span>
+        </a>
+        <!--toggle button for mobile nav-->
+        <button class="navbar-toggler" type = "button" data-bs-toggle = "collapse" data-bs-target = "#main-nav" aria-controls = "main-nav" aria-expanded = "false" aria-label = "toggle navigation">
+        <span class = "navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end align-center" id = "main-nav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="#topics" class="nav-link">About the book</a>
+                </li>
+                 <li class="nav-item">
+                    <a href="#topics" class="nav-link">About the book</a>
+                </li>
+                 <li class="nav-item">
+                    <a href="#topics" class="nav-link">About the book</a>
+                </li>
+                 <li class="nav-item">
+                    <a href="#topics" class="nav-link">About the book</a>
+                </li>
+                 <li class="nav-item">
+                    <a href="#topics" class="nav-link">About the book</a>
+                </li>
+                 <li class="nav-item">
+                    <a href="#topics" class="nav-link">About the book</a>
+                </li>
+                <li class="nav-item ms-2 d-none d-md-inline">
+                    <a href="" class="btn btn-secondary">Buy now</a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<section id="intro">
+    <div class="container-lg  my-5">
+        <div class="row justify-content-center ">
+            <div class="col-sm-4 col-md-5 col-lg-6 text-center text-md-start">                       <!-- No of column =  for responsiveness:col-sm-4 for small and col-lg-4 for large--> 
+                <h1>
+                <div class = "display-2">
+                    <!-- <p>This is container </p> -->
+                    Black Belt
+                </div>
+                <div class="text-muted display-5">
+                    Your Coding Skills
+                </div>
+                </h1>
+                <p class="lead my-5 text-muted">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo ratione animi alias porro quas molestiae, ipsum officia mollitia nemo magni voluptas necessitatibus possimus iure aperiam itaque molestias commodi earum exercitationem, sequi
+                     fugit explicabo quia vel sint odit? Animi, provident autem?
+                </p>
+                <a href="#pricing" class=" btn btn-secondary btn-lg">Buy now</a>
+            </div>
+
+            <div class="col-md-5 text-center d-nome d-md-block">
+                <img class = "fluid-fluid"src="/home/sirjana/Videos/Documents/Portfolio_Sirjana/images/a1-modified.png" alt="">
+            </div>
+
+
+
+            <!-- <div class="col-sm-4 col-lg-3">
+            <div class = "p-5  bg-primary text-light">
+            <p>This is container 1</p>
+            </div>
+            </div>
+            <div class="col-sm-4 col-lg-3">
+            <div class = "p-5   bg-primary text-light">
+            <p>This is container 1</p>
+            </div>
+            </div> -->
+        </div>
+    </div>
+</section>
+
+<!-- <div class="container-lg my-5"> justify content-center for any screen
+    <div class="row">
+        <div class="col md-3">
+            <div class="bg-secondary p-5">
+                This is secondary
+            </div>
+        </div>
+        <div class="col md-3">
+            <div class="bg-secondary p-5">
+                This is secondary
+            </div>
+        </div>
+    </div>
+</div> -->
+
+
+
+
+<section>
+  <div class="container text-center bg-muted pt-5 pb-5" >
+    <div class="row justify-content-center">
+      <div class="col-md-4">
+        <div class="card mx-auto">
+          <img src="/home/sirjana/Videos/Documents/Portfolio_Sirjana/images/cover.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card 1</h5>
+            <p class="card-text">Some quick example text for the first card.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mx-auto">
+          <img src="/home/sirjana/Videos/Documents/Portfolio_Sirjana/images/cover.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card 2</h5>
+            <p class="card-text">Some quick example text for the second card.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mx-auto">
+          <img src="/home/sirjana/Videos/Documents/Portfolio_Sirjana/images/cover.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card 3</h5>
+            <p class="card-text">Some quick example text for the third card.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+          </div></section>
+
+
+
+<div>
+
+<?php
+
+$a = 5;
+$b = 10;
+$sum = $a + $b;
+echo "The result is: " . $sum;
+
+?>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
