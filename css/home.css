@@ -11,7 +11,7 @@
 .body{
    
 font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-background-color: none;
+background-color: black;
 margin-top: 50px;
 
 }
@@ -427,7 +427,7 @@ For screens between 1281px and 1526px
   }
 
   .fa-brands.fa-facebook {
-    color: rgb(64, 66, 182);
+    color: rgb(233, 27, 27);
     font-size: 25px;
    }
 
